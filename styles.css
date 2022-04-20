@@ -1,23 +1,116 @@
+:root {
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
+  --Red: hsl(0, 100%, 68%);
+}
 body {
+  overflow-x: hidden;
+}
+#navbar-div {
   font-family: "Barlow Condensed", sans-serif;
-}
-
-#navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  font-size: 18px;
 }
-.navbar {
+.navbar-ul {
+  display: flex;
   list-style: none;
 }
 
-#new {
-  border: solid;
-  color: blue;
-  border-radius: 10pt;
-  padding: 0.2em;
+.navbar-ul li a {
+  padding: 5px 10px;
+
+  display: inline-block;
+  text-decoration: none;
+  color: var(--Very-Dark-Blue);
+}
+.navbar-ul li a:hover {
+  text-decoration: underline;
+}
+#login {
+  padding-left: 10em;
+  color: var(--Light-Grayish-Blue);
 }
 
+.illustration-img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: auto;
+  position: absolute;
+  left: 45%;
+  top: 20%;
+}
+
+#new {
+  display: inline-block;
+  text-align: center;
+  font-family: "barlow condensed", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 15pt;
+  padding: 0.2rem;
+  width: 3rem;
+  color: var(--Light-Grayish-Blue);
+  text-transform: uppercase;
+}
+
+#mono-dash {
+  font-family: "barlow condensed", sans-serif;
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--Grayish-Blue);
+  margin-left: 2rem;
+}
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--Very-Dark-Blue);
+}
 #main-body {
-  font-size: 40px;
+  font-size: 18px;
   font-weight: 400;
+  padding: 3em;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+.planning-p {
+  display: block;
+  max-width: 15em;
+  color: var(--Very-Dark-Blue);
+}
+
+#schedule-button {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  padding: 0.8em;
+  margin-right: 5em;
+  background-color: var(--Red);
+  border: solid 2px var(--Red);
+  border-radius: 10px;
+  font-size: 18px;
+}
+#schedule-button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 93%, 82%);
+  border: solid 2px hsl(0, 93%, 82%);
+}
+
+#schedule-button a {
+  text-decoration: none;
+  color: var(--Light-Grayish-Blue);
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.schedule-interactive {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+  letter-spacing: 0.2em;
+}
+
+footer {
+  margin: 10em;
 }
